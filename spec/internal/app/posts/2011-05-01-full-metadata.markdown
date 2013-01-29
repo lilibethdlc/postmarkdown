@@ -9,7 +9,9 @@ First paragraph of content.
 
 Second paragraph of content.
 
-    First line of code.
-      Second line of code.
+```ruby
+First line of code.
+  Second line of code.
+```
 
 <%= content_tag :p, "Paragraph created by Rails helper" %>

@@ -25,7 +25,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'haml', '~> 3.1'
   s.add_dependency 'gravtastic'
   s.add_dependency 'nokogiri'
-  s.add_dependency 'rdiscount'
+  s.add_dependency 'redcarpet'
+  s.add_dependency 'pygmentize'
   s.add_dependency 'kaminari'
 
   s.add_development_dependency 'appraisal'

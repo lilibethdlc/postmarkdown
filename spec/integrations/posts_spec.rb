@@ -139,7 +139,7 @@ describe 'Post views', :type => :request do
     end
 
     it 'should preserve whitespace on code blocks' do
-      page.source.should match '<pre><code>First line of code.&#x000A;  Second line of code.&#x000A;</code></pre>'
+      page.source.should match "<div class=\"highlight\"><pre><span class=\"no\">First</span> <span class=\"n\">line</span> <span class=\"n\">of</span> <span class=\"n\">code</span><span class=\"o\">.</span>&#x000A;  <span class=\"no\">Second</span> <span class=\"n\">line</span> <span class=\"n\">of</span> <span class=\"n\">code</span><span class=\"o\">.</span></pre></div>"
     end
 
     it 'should allow calling Rails helpers via ERB tags' do
